@@ -1,0 +1,203 @@
+.font-wendy{
+    font-family:'Wendy One', sans-serif;
+}
+.font-bebas{
+    font-family:'Bebas Neue', cursive;
+}
+.font-comfortaa{
+    font-family:  'Comfortaa', cursive;
+}
+h1{
+    background: url(../images/logo.svg) no-repeat;
+    width:220px;
+    height:40px;
+    text-indent: 105%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.mb-max{
+    margin-bottom: 60px;
+    @media(min-width: 576px){
+        margin-bottom: 100px;
+    }
+}
+
+
+
+.top-btn{
+    position:fixed;
+    z-index:3;
+    right:16px;
+    top:600px;
+    width:50px;
+    height:50px;
+    padding:15px 0px;
+    @media(min-width: 576px){
+    top:900px;
+    }
+    @media (min-width:768px) {
+        right:48px;
+    top:500px;
+    width:70px;
+    height:70px;
+    padding:20px 10px;
+    }
+    }
+
+
+// index page
+
+.index-bg{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg_home_sm.svg);
+    background-position: 50% 400px;
+    background-size: 334px;
+    @media(min-width:576px){
+        background-image: url(../images/bg_home.svg);
+        background-position: right top;
+        background-size: 851px;  
+    }
+}
+
+.bg-img-lg{
+    background-repeat: no-repeat;
+    background-image: url(../images/ball01.svg);
+    background-position:-28% 15px;
+    background-size: 126px;
+    @media(min-width:576px){
+        background-position: -18% 15px;
+        background-size:180px;  
+    }
+    @media(min-width:900px){
+        background-position: -30% 0px;
+        background-size: 330px;  
+    }
+}
+
+
+.bg-img-md{
+    background-repeat: no-repeat;
+    background-image: url(../images/ball02.svg);
+    background-position:110% 1650px;
+    background-size: 135px;
+    @media(min-width:576px){
+        background-position:110% 650px;
+        background-size:315px;  
+    }
+    @media(min-width:900px){
+        background-position:110% 230px;
+        background-size:300px;  
+    }
+}
+
+.bg-img-min{
+    background-repeat: no-repeat;
+    background-image: url(../images/ball03.svg);
+    background-position:-15% 0px;
+    background-size: 155px;
+    @media(min-width:576px){
+        background-size:315px;  
+    }
+    @media(min-width:900px){
+        background-position:3% 20px;
+        background-size: 155px;
+    }
+}
+
+
+.circle-icon{
+    width:86px;
+    height:86px;
+}
+.upper-shot{
+    width:80px;
+    height:80px;
+    position:absolute;
+    top:-50px;
+    left:32px;
+    z-index:5;
+}
+
+.footer-banner{
+    height:461px;
+    background-repeat: no-repeat;
+    background-image: url(../images/footer_sm.svg);
+    background-position: top;
+    background-size: contain;
+    p{
+        margin-bottom:24px;
+        font-size: 23.5px;
+    }
+    @media(min-width:768px){
+        background-repeat: repeat-x;
+        height:503px;
+        background-image: url(../images/home_footer.svg);
+        p{
+        margin-bottom:48px;
+        font-size: 32px;
+        }
+    }
+    
+}
+
+
+// charge page
+
+
+.charge-bg{
+    background-repeat: no-repeat;
+    background-image: url(../images/banner_sm.svg);
+    background-position: right 88px;
+    background-size: 375px;
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: #F7F9FD;
+        border-radius: 0 0 0 250px;
+        width:100%;
+        height:495px;
+        top:88px;
+        right:0;
+        z-index:-3;
+    }
+    @media(min-width:400px){
+        background-size: contain;
+        &::after{
+            border-radius: 0 0 0 300px;
+            height:470px;
+        }
+    }
+    @media(min-width:576px){
+        background-image: url(../images/banner.svg);
+        background-position: right top;
+        &::after{
+            top:0;
+        }
+    }
+    @media(min-width:768px){
+        background-size: 885px;
+    }
+    
+}
+
+.bg-img-sm{
+    background-repeat: no-repeat;
+    background-image: url(../images/ball03.svg);
+    background-position: -5% 450px;
+    background-size: 160px;
+    @media(min-width:768px){
+        background-position: -5% 150px;
+    }
+}
+
+.plan-btn-item{
+    &:hover{
+        color:white;
+    }
+    &.active{
+        color:white;
+    }
+}
